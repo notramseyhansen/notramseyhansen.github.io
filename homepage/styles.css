@@ -1,0 +1,87 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A8D5BA;
+    /* Lighter green background */
+    color: blue;
+    /* Blue text */
+    margin: 0;
+    padding-top: 60px;
+    /* Avoid content hiding under navbar */
+}
+
+/* Background Image for Home Page */
+.homepage {
+    background-image: url('background.jpg');
+    /* Replace with your image filename */
+    background-size: cover;
+    /* Cover the full page */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Makes the image stay in place when scrolling */
+    height: 100vh;
+    /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* Ensure text is readable */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Add shadow for better contrast */
+}
+
+/* Small Navbar */
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #2E7D32;
+    /* Dark green */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Light shadow */
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #FFD700;
+    /* Gold text */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white !important;
+    padding: 5px 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+    /* Gold hover effect */
+}
+
+/* Content Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: static;
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
